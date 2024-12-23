@@ -1,0 +1,106 @@
+/* style.css */
+
+/* التصفية الأساسية */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* إعدادات النصوص */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* الحاوية الأساسية لكل من صفحات تسجيل الدخول والتسجيل */
+.auth-container {
+    display: none; /* إخفاء الحاويتين مبدئيًا */
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.tiktok.com%2Fdiscover%2F%25D8%25AE%25D9%2584%25D9%2581%25D9%258A%25D8%25A7%25D8%25AA-%25D9%2584%25D9%2588%25D9%2581%25D9%258A-%25D9%2581%25D8%25AE%25D9%2585%25D9%2587&psig=AOvVaw2iQF5zn8xrlSGmfGYxwjm1&ust=1734950938881000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCNj-x42au4oDFQAAAAAdAAAAABAE);
+    background-size: cover;
+    background-position: center;
+}
+
+/* صندوق النصوص */
+.auth-box {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+}
+
+.auth-image {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+input[type="email"], input[type="password"], input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+p {
+    margin-top: 15px;
+}
+
+a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+/* إظهار صفحة تسجيل الدخول */
+.auth-container.signin-container {
+    display: flex;
+}
+
+/* إظهار صفحة التسجيل */
+.auth-container.signup-container {
+    display: flex;
+}
+
+/* عرض صفحة التسجيل عند الضغط على الرابط */
+.signup-container {
+    display: none;
+}
+
+

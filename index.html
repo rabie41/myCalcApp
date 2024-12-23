@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In / Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- صفحة تسجيل الدخول -->
+    <div class="auth-container">
+        <div class="auth-box">
+            <img src="" alt="Logo" class="auth-image">
+            <h2>تسجيل الدخول</h2>
+            <form id="sign-in-form">
+                <div class="input-group">
+                    <label for="email">البريد الإلكتروني</label>
+                    <input type="email" id="email" placeholder="أدخل بريدك الإلكتروني" required>
+                </div>
+                <div class="input-group">
+                    <label for="password">كلمة المرور</label>
+                    <input type="password" id="password" placeholder="أدخل كلمة المرور" required>
+                </div>
+                <button type="submit" class="btn">تسجيل الدخول</button>
+                <p>ليس لديك حساب؟ <a href="#" id="to-signup">التسجيل الآن</a></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- صفحة التسجيل -->
+    <div class="auth-container signup-container">
+        <div class="auth-box">
+            <img src="" alt="Logo" class="auth-image">
+            <h2>التسجيل</h2>
+            <form id="sign-up-form">
+                <div class="input-group">
+                    <label for="username">اسم المستخدم</label>
+                    <input type="text" id="username" placeholder="أدخل اسم المستخدم" required>
+                </div>
+                <div class="input-group">
+                    <label for="email-signup">البريد الإلكتروني</label>
+                    <input type="email" id="email-signup" placeholder="أدخل بريدك الإلكتروني" required>
+                </div>
+                <div class="input-group">
+                    <label for="password-signup">كلمة المرور</label>
+                    <input type="password" id="password-signup" placeholder="أدخل كلمة المرور" required>
+                </div>
+                <button type="submit" class="btn">التسجيل</button>
+                <p>لديك حساب؟ <a href="#" id="to-signin">تسجيل الدخول</a></p>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
